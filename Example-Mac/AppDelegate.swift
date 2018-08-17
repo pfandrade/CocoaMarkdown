@@ -15,13 +15,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
     @IBOutlet var textView: NSTextView!
 
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
-        let path = NSBundle.mainBundle().pathForResource("test", ofType: "md")!
+    func applicationDidFinishLaunching(_ notification: Notification) {
+        
+        let path = Bundle.main.path(forResource: "test", ofType: "md")!
         let document = CMDocument(contentsOfFile: path, options: CMDocumentOptions(rawValue: 0))
-        let renderer = CMAttributedStringRenderer(document: document, attributes: CMTextAttributes())
-        renderer.registerHTMLElementTransformer(CMHTMLStrikethroughTransformer())
-        renderer.registerHTMLElementTransformer(CMHTMLSuperscriptTransformer())
-        renderer.registerHTMLElementTransformer(CMHTMLUnderlineTransformer())
-        textView.textStorage?.appendAttributedString(renderer.render())
+        let renderer = CMAttributedStringRenderer(document: document, attributes: CMTextAttributes())!
+        renderer.register(CMHTMLStrikethroughTransformer())
+        renderer.register(CMHTMLSuperscriptTransformer())
+        renderer.register(CMHTMLUnderlineTransformer())
+        textView.textStorage?.append(renderer.render())
     }
 }
