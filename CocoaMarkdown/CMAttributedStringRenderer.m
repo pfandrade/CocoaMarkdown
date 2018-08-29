@@ -16,6 +16,7 @@
 #import "CMTextAttributes.h"
 #import "CMNode.h"
 #import "CMParser.h"
+#import "CMDocument_Private.h"
 
 #import "Ono.h"
 
@@ -209,7 +210,12 @@
 
 - (void)parserFoundSoftBreak:(CMParser *)parser
 {
-    [self appendString:@" "];
+    if (_document.options & CMDocumentOptionsHardBreaks) {
+        [self appendString:@"\u2028"];
+    }
+    else {
+        [self appendString:@" "];
+    }
 }
 
 - (void)parserFoundLineBreak:(CMParser *)parser
