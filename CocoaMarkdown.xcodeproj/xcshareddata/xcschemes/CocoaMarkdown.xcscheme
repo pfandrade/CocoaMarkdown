@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "729F53D91A68641400CC7448"
                BuildableName = "CocoaMarkdown.framework"
-               BlueprintName = "CocoaMarkdown-iOS"
+               BlueprintName = "CocoaMarkdown"
                ReferencedContainer = "container:CocoaMarkdown.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -41,6 +41,15 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "729F53D91A68641400CC7448"
+            BuildableName = "CocoaMarkdown.framework"
+            BlueprintName = "CocoaMarkdown"
+            ReferencedContainer = "container:CocoaMarkdown.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -53,17 +62,6 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "729F53D91A68641400CC7448"
-            BuildableName = "CocoaMarkdown.framework"
-            BlueprintName = "CocoaMarkdown-iOS"
-            ReferencedContainer = "container:CocoaMarkdown.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -80,12 +78,10 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "729F53D91A68641400CC7448"
             BuildableName = "CocoaMarkdown.framework"
-            BlueprintName = "CocoaMarkdown-iOS"
+            BlueprintName = "CocoaMarkdown"
             ReferencedContainer = "container:CocoaMarkdown.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -98,7 +94,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "729F53D91A68641400CC7448"
             BuildableName = "CocoaMarkdown.framework"
-            BlueprintName = "CocoaMarkdown-iOS"
+            BlueprintName = "CocoaMarkdown"
             ReferencedContainer = "container:CocoaMarkdown.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
